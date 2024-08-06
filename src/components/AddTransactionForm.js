@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function AddTransactionForm() {
+function AddTransactionForm({addTransaction}) {
 
 const [date, setDate]=useState('')
 const[description, setDescription]=useState('')
@@ -20,6 +20,7 @@ fetch('http://localhost:8001/transactions', {
 
 .then(response=>response.json())
 .then(data=>{
+  addTransaction(data)
   setDate('')
   setDescription('')
   setCategory('')
