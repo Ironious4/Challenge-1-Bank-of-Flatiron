@@ -90,6 +90,20 @@
       "category": "Travel",
       "amount": "2000",
       "id": 13
+    },
+    {
+      "date": "2024-08-08",
+      "description": "movies",
+      "category": "entertainment",
+      "amount": "1000",
+      "id": 14
+    },
+    {
+      "date": "2024-08-08",
+      "description": "birthday",
+      "category": "entertainment",
+      "amount": "1000",
+      "id": 15
     }
   ]
 }

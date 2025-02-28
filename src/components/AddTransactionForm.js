@@ -7,10 +7,11 @@ const[description, setDescription]=useState('')
 const[category, setCategory]=useState('')
 const[amount, setAmount]=useState('')
 
+
 const handleSubmit= (event) => {
   event.preventDefault();
 
-fetch('http://localhost:8001/transactions', {
+fetch('https://json-server-vercel-gamma-beryl.vercel.app/transactions', {
   method:'POST',
   headers:{
     'Content-Type':'application/json',
@@ -28,6 +29,7 @@ fetch('http://localhost:8001/transactions', {
 
  })
 }
+
 
 
 
@@ -49,3 +51,7 @@ fetch('http://localhost:8001/transactions', {
 }
 
 export default AddTransactionForm;
+
+
+
+
